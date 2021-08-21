@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-size: 16px
+}
+
+.fas {
+    font-size: 1.8rem;
+    color: #e9ecef;
+    transition: color 0.5s
+}
+.fas:hover {
+    color: #28a745
+}
