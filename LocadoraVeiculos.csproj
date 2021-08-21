@@ -135,6 +135,10 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Img\bicicletaGenerica.png" />
+    <Content Include="Content\Img\caminhaoGenerico.png" />
+    <Content Include="Content\Img\carroGenerico.png" />
+    <Content Include="Content\Img\motoGenerica.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
