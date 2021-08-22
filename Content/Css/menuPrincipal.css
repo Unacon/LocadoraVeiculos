@@ -1,0 +1,60 @@
+﻿/*Menu Principal*/
+.fas {
+    font-size: 1.8rem;
+    color: #e9ecef;
+    transition: color 0.5s
+}
+
+.fas:hover {
+    color: #28a745
+}
+
+.dropdown-menu {
+    margin-top: 12px;
+    background-color: #343a40;
+}
+
+.dropdown-item {
+    color: #f8f9fa;
+}
+
+.nav-item{
+    color: #e9ecef;
+}
+
+/* Small Devices - Mobile Only */
+@media (max-width: 641px) {
+    /* CSS */
+    #menuPrincipal > #menuOptions, #menuBusca {
+        display: none !important;
+    }
+}
+
+/* Medium Devices - Tablet */
+@media (min-width: 641px) and (max-width: 820px) {
+    /* CSS */
+    #menuPrincipal > #menuOptions, #menuBusca {
+        display: none !important;
+    }
+}
+
+/* Medium Devices - Tablet */
+@media (min-width: 820px) {
+    /* CSS */
+    #menuPrincipal > #menuNavbar {
+        display: none !important;
+    }
+}
+
+/* Large Devices - Desktop */
+@media (min-width: 992px) {
+    /* CSS */
+    #menuPrincipal > #menuNavbar {
+        display: none !important;
+    }
+}
+
+/* Estra Large Devices - Desktop */
+@media (min-width: 1200px) {
+    /* CSS */
+}

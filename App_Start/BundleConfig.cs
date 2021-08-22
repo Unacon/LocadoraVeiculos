@@ -23,16 +23,16 @@ namespace LocadoraVeiculos
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
-            bundles.Add(new ScriptBundle("~/budles/app").Include(
-                       "~/Scripts/app.js"));
-
             bundles.Add(new ScriptBundle("~/app").IncludeDirectory(
-                        "~/Scripts/App", "*.js", true));
+                        "~/Scripts/App", "*.js"));
             
             // STYLES
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/bootstrap/css").Include(
+                      "~/Content/bootstrap.css"));
+
+            bundles.Add(new StyleBundle("~/CssPaginas").IncludeDirectory(
+                        "~/Content/Css", "*.css"));
+
         }
     }
 }

@@ -6,97 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Locadora de Veículos</title>
     <script src="https://kit.fontawesome.com/5497a3d25f.js" crossorigin="anonymous"></script>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/bootstrap/css")
+    @Styles.Render("~/CssPaginas")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <nav class="navbar navbar-dark sticky-top bg-dark">
-        <div class="col d-flex">
-            <div class="navbar-brand">
-                Logo Locadora
+    <nav class="navbar navbar-dark sticky-top bg-dark" id="menuPrincipal">
+        <div class="navbar-brand">
+            Logo Locadora
+        </div>
+        <div class="col d-flex" id="menuOptions">
+            <div class="col-auto my-auto dropdown">
+                <i class="fas fa-car" data-toggle="dropdown">
+                </i>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Compacto</a>
+                    <a class="dropdown-item" href="#">Sedan</a>
+                    <a class="dropdown-item" href="#">SUV</a>
+                    <a class="dropdown-item" href="#">Esportivo</a>
+                    <a class="dropdown-item" href="#">Jipe</a>
+                    <a class="dropdown-item" href="#">Picape</a>
+                    <a class="dropdown-item" href="#">Minivan</a>
+                </div>
             </div>
-            <div class="col d-flex">
-                <div class="col-auto my-auto dropdown">
-                    <i class="fas fa-car" data-toggle="dropdown">
-                    </i>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Compacto</a>
-                        <a class="dropdown-item" href="#">Sedan</a>
-                        <a class="dropdown-item" href="#">SUV</a>
-                        <a class="dropdown-item" href="#">Esportivo</a>
-                        <a class="dropdown-item" href="#">Jipe</a>
-                        <a class="dropdown-item" href="#">Picape</a>
-                        <a class="dropdown-item" href="#">Minivan</a>
-                    </div>
+            <div class="col-auto my-auto dropdown">
+                <i class="fas fa-motorcycle" data-toggle="dropdown"></i>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">50 - 200 cilindradas</a>
+                    <a class="dropdown-item" href="#">200 - 300 cilindradas</a>
+                    <a class="dropdown-item" href="#">300 - 500 cilindradas</a>
+                    <a class="dropdown-item" href="#">300 - 500 cilindradas</a>
+                    <a class="dropdown-item" href="#">500 - 900 cilindradas</a>
+                    <a class="dropdown-item" href="#">900+ cilindradas</a>
                 </div>
-
-                <div class="col-auto my-auto dropdown">
-                    <i class="fas fa-motorcycle" data-toggle="dropdown"></i>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">50 - 200 cilindradas</a>
-                        <a class="dropdown-item" href="#">200 - 300 cilindradas</a>
-                        <a class="dropdown-item" href="#">300 - 500 cilindradas</a>
-                        <a class="dropdown-item" href="#">300 - 500 cilindradas</a>
-                        <a class="dropdown-item" href="#">500 - 900 cilindradas</a>
-                        <a class="dropdown-item" href="#">900+ cilindradas</a>
-                    </div>
+            </div>
+            <div class="col-auto my-auto dropdown">
+                <i class="fas fa-truck" data-toggle="dropdown"></i>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">3/4</a>
+                    <a class="dropdown-item" href="#">Toco</a>
+                    <a class="dropdown-item" href="#">Truck</a>
+                    <a class="dropdown-item" href="#">Carreta Simples</a>
+                    <a class="dropdown-item" href="#">Carreta Eixo Extendido</a>
                 </div>
-                <div class="col-auto my-auto dropdown">
-                    <i class="fas fa-truck" data-toggle="dropdown"></i>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">3/4</a>
-                        <a class="dropdown-item" href="#">Toco</a>
-                        <a class="dropdown-item" href="#">Truck</a>
-                        <a class="dropdown-item" href="#">Carreta Simples</a>
-                        <a class="dropdown-item" href="#">Carreta Eixo Extendido</a>
-                    </div>
-                </div>
-                <div class="col-auto my-auto dropdown">
-                    <i class="fas fa-bicycle" data-toggle="dropdown"></i>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Urbana</a>
-                        <a class="dropdown-item" href="#">Dobrável</a>
-                        <a class="dropdown-item" href="#">Speed</a>
-                        <a class="dropdown-item" href="#">E-Bike</a>
-                        <a class="dropdown-item" href="#">Mountain Bike</a>
-                        <a class="dropdown-item" href="#">BMX</a>
-                    </div>
+            </div>
+            <div class="col-auto my-auto dropdown">
+                <i class="fas fa-bicycle" data-toggle="dropdown"></i>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Urbana</a>
+                    <a class="dropdown-item" href="#">Dobrável</a>
+                    <a class="dropdown-item" href="#">Speed</a>
+                    <a class="dropdown-item" href="#">E-Bike</a>
+                    <a class="dropdown-item" href="#">Mountain Bike</a>
+                    <a class="dropdown-item" href="#">BMX</a>
                 </div>
             </div>
         </div>
-        <div class="col d-flex justify-content-between">
-            <form class="form-inline" method="post" id="formHeader">
+        <div class="col d-flex d-inline justify-content-end" id="menuBusca">
+            <form class="form-inline justify-content-end" method="post" id="formHeader">
                 <input class="form-control mr-sm-2" type="search" placeholder="Veiculo" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" id="menuNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <form class="form-inline" method="post" id="formHeader">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Veiculo" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-
-                </li>
-            </ul>
-            <div class="col d-flex justify-content-between">
+            <div class="navbar-nav mr-auto">
+                <div class="nav-item">
+                    <a class="nav-link" href="#">Carro</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="#">Moto</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="#">Caminhão</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="#">Bicicleta</a>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-link">
+                        <form class="form-group form-row" method="post" id="formHeader">
+                            <div class="col-auto">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Veiculo" aria-label="Search">
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-outline-success my-sm-0" type="submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-
-
     </nav>
     <div class="container body-content">
         @RenderBody()
