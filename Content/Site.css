@@ -16,3 +16,15 @@ body {
 .fas:hover {
     color: #28a745
 }
+
+/*Dropdown menu*/
+.dropdown-menu {
+    margin-top: 12px;
+    background-color: #343a40;
+}
+
+.dropdown-item{
+    color: #e9ecef;
+}
+
+
