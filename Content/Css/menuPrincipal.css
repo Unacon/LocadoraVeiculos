@@ -1,20 +1,20 @@
 ﻿/*Menu Principal*/
-.fas {
+#menuOptions .fas {
     font-size: 1.8rem;
     color: #e9ecef;
     transition: color 0.5s
 }
 
-.fas:hover {
-    color: #28a745
-}
+    #menuOptions .fas:hover {
+        color: #28a745
+    }
 
-.dropdown-menu {
+#menuOptions .dropdown-menu {
     margin-top: 12px;
     background-color: #343a40;
 }
 
-.dropdown-item {
+#menuOptions .dropdown-item {
     color: #f8f9fa;
 }
 

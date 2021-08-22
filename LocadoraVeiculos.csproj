@@ -139,6 +139,8 @@
     <Content Include="Content\Img\bicicletaGenerica.png" />
     <Content Include="Content\Img\caminhaoGenerico.png" />
     <Content Include="Content\Img\carroGenerico.png" />
+    <Content Include="Content\Img\duster.png" />
+    <Content Include="Content\Img\logo.png" />
     <Content Include="Content\Img\motoGenerica.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
